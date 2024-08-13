@@ -1,0 +1,409 @@
+.circular-container-ut {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 700px;
+    margin: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .central-circle-ut {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f4f4f4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  
+    /* Image background properties */
+    background-image: url('https://img.freepik.com/premium-photo/graduation-cap-hat-with-degree-paper-wood-table-abstract-light-background_43379-1057.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .central-circle-ut h2{
+    color: whitesmoke;
+  }
+  
+  .info-item-ut {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .info-item-ut .icon-ut {
+    font-size: 36px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .info-item-ut h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #fa632cc9;
+  }
+  
+  /* Position items around the central circle */
+  .item1-ut {
+    top: 15%; /* Adjusted to ensure full visibility */
+    left: 50%;
+    transform: translate(-50%, 0); /* Adjusted transform to prevent cutting off */
+    background-color: #cec6c6c5;
+    cursor: pointer;
+  }
+  
+  .item2-ut {
+    top: 39%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: #cec6c6c5;
+    cursor: pointer;
+  }
+  
+  .item3-ut {
+    top: 90%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: #cec6c6c5;
+    cursor: pointer;
+  }
+  
+  .item4-ut {
+    top: 105%; /* Adjusted to ensure full visibility */
+    left: 50%;
+    transform: translate(-50%, -100%); /* Adjusted transform to prevent cutting off */
+    background-color: #cec6c6c5;
+    cursor: pointer;
+  }
+  
+  .item5-ut {
+    top: 90%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: #cec6c6c5;
+    cursor: pointer;
+  }
+  
+  .item6-ut {
+    top: 39%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: #cec6c6c5;
+  }
+  
+  /* Hover effects */
+  .info-item-ut:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-color: #e8e1e1c5;
+  }
+  
+  .info-item-ut:hover .icon-ut {
+    transform: scale(1.2);
+  }
+  
+  /* Central circle hover effect */
+  .central-circle-ut:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  
+  /* Animation on load */
+  .circular-container-ut {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .info-item-ut {
+    opacity: 0;
+    animation: fadeInMove 1s ease-in-out forwards;
+  }
+  
+  .info-item-ut:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .info-item-ut:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  .info-item-ut:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  
+  .info-item-ut:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+  
+  .info-item-ut:nth-child(6) {
+    animation-delay: 1s;
+  }
+  
+  .info-item-ut:nth-child(7) {
+    animation-delay: 1.2s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInMove {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  .team-section {
+    position: relative;
+    top:200px;
+    text-align: center;
+    padding: 2em;
+    background-color: #e9e2e23b;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color:rgb(227, 153, 17);
+}
+
+.team-section .description {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    color: #555;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    max-width: 300px;
+    margin: 1em;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.team-member p {
+    font-size: 1em;
+    color:rgb(227, 153, 17);
+}
+.team-summary {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: rgb(29, 29, 70);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-summary h2 {
+    font-size: 2em;
+    color: #e74c3c;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.team-summary h3 {
+    font-size: 1.2em;
+    color: rgb(227, 153, 17);
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.team-summary p {
+    font-size: 1em;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+.management-container-mt {
+    position: relative;
+    top: 200px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e4dddd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    animation: fadeIn-mt 1s ease-in-out;
+}
+
+.header-section-mt {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-section-mt h1 {
+    font-size: 2.5rem;
+    color:rgb(227, 153, 17);
+    margin-bottom: 10px;
+}
+
+.image-section-mt {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image-section-mt img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Reduced height */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: zoomIn-mt 1.2s ease-in-out;
+}
+
+.subheading-mt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: fadeIn-mt 1s ease-in-out;
+}
+
+.content-section-mt {
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    animation: slideIn-mt 1s ease-in-out;
+}
+
+.content-section-mt h2 {
+    font-size: 2rem;
+    color:rgb(227, 153, 17);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-section-mt p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: rgb(5, 5, 90);
+}
+
+/* Animations */
+@keyframes fadeIn-mt {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn-mt {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideIn-mt {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header-section-mt h1 {
+        font-size: 2rem;
+    }
+
+    .subheading-mt {
+        font-size: 1.5rem;
+        padding: 8px 16px;
+    }
+
+    .content-section-mt h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-section-mt p {
+        font-size: 0.9rem;
+    }
+}
+
+  @media screen and (max-width: 768px) {
+    .circular-container-ut {
+      height: 700px; /* Adjusted height for smaller screens */
+      background-size: cover;
+    }
+  
+    .central-circle-ut {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .info-item-ut {
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+    }
+  
+    .info-item-ut .icon-ut {
+      font-size: 24px;
+    }
+  
+    .info-item-ut h3 {
+      font-size: 14px;
+    }
+  
+    .info-item-ut p {
+      font-size: 12px;
+    }
+  }
+  

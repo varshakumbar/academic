@@ -1,0 +1,362 @@
+.dis {
+    background-image: url('https://i1.wp.com/voxiitk.com/wp-content/uploads/2020/07/109777620_1155206958198504_986232562462590223_n.jpg?fit=1200%2C630&ssl=1');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .overlay-dis{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(45, 42, 42, 0.516);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content-dis h1 {
+    
+    max-width: 800px;
+    margin: 0 20px;
+    font-size: 40px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.726);
+    -webkit-text-stroke-width: 1px;
+  }
+  
+ 
+  
+ 
+  .para-dis {
+    padding: 0 60px; /* Add padding to both left and right */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .para-dis p {
+    text-align: justify;
+    margin-bottom: 1em;
+    color: rgb(5, 5, 90); /* Add some space between paragraphs */
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards; /* Adding animation */
+  }
+  
+  .para-dis p:nth-child(1) {
+    animation-delay: 0.2s; /* Delay for the first paragraph */
+  }
+  
+  .para-dis p:nth-child(2) {
+    animation-delay: 0.4s; /* Delay for the second paragraph */
+  }
+  
+  .para-dis p:nth-child(3) {
+    animation-delay: 0.6s; /* Delay for the third paragraph */
+  }
+  
+  .container-dis {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .card-content-dis {
+    background-color: rgba(220, 217, 217, 0.582);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .card-content-dis h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: rgb(5, 5, 90);
+    text-align: center;
+  }
+  
+  .card-content-dis p {
+    font-size: 1em;
+    margin-bottom: 1em;
+    text-align: justify;
+    color: rgb(219, 165, 66);
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .content-container-dis {
+    background: linear-gradient(to right, rgb(5, 5, 90), rgb(25, 25, 112));
+    color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 20px auto;
+    animation: fadeInUp 1s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  .heading-dis {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: fadeInUp 1s ease-in-out;
+    color: salmon;
+  }
+  
+  .content1-dis p {
+    text-align: justify;
+    margin-bottom: 1em;
+    animation: fadeInUp 1s ease-in-out;
+    color: rgb(219, 165, 66);
+  }
+  
+  .content1-dis p:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .content1-dis p:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .content1-dis p:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .content1-dis ul {
+    list-style-type: none;
+    padding: 0;
+    animation: fadeInUp 1s ease-in-out;
+    animation-delay: 0.8s;
+  }
+  
+  .content1-dis ul li {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .content1-dis ul li:nth-child(1) {
+    animation-delay: 1s;
+  }
+  
+  .content1-dis ul li:nth-child(2) {
+    animation-delay: 1.2s;
+  }
+  
+  .content1-dis ul li:nth-child(3) {
+    animation-delay: 1.4s;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .content2-container-dis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(5, 5, 90, 0.8), rgba(25, 25, 112, 0.8));
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .content2-dis {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    width: 100%;
+    animation: fadeInUp 1s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  .content2-dis p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .micro-table-dis {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .micro-table-dis th,
+  .micro-table-dis td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .micro-table-dis th {
+    background: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+  }
+  
+  .micro-table-dis tr:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  
+  .container3-dis {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+   
+}
+
+.title-dis {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.avenue-dis {
+    margin-bottom: 20px;
+}
+
+.subtitle-dis {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.text-dis {
+    color: #666;
+    margin: 0;
+}
+
+  
+ 
+  @media (max-width: 768px) {
+    .para-dis {
+      padding: 0 10px; /* Reduce padding for smaller screens */
+    }
+    .card-content-dis {
+        padding: 15px;
+      }
+    
+      .card-content-dis h2 {
+        font-size: 1.5em;
+      }
+    
+      .card-content-dis p {
+        font-size: 0.9em;
+      }
+      .content-container-dis {
+        padding: 20px;
+      }
+    
+      .heading-dis {
+        font-size: 2em;
+      }
+    
+      .content1-dis p {
+        font-size: 0.9em;
+      }
+    
+      .content1-dis ul li {
+        font-size: 0.9em;
+      }
+      .content2-dis {
+        padding: 20px;
+      }
+    
+      .content2-dis p {
+        font-size: 1em;
+      }
+    
+      .micro-table-dis th,
+      .micro-table-dis td {
+        font-size: 0.9em;
+        padding: 10px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .para-dis {
+      padding: 0 5px; /* Further reduce padding for very small screens */
+    }
+    .card-content-dis {
+        padding: 10px;
+      }
+    
+      .card-content-dis h2 {
+        font-size: 1.2em;
+      }
+    
+      .card-content-dis p {
+        font-size: 0.8em;
+      }
+      .content-container-dis {
+        padding: 15px;
+      }
+    
+      .heading-dis {
+        font-size: 1.5em;
+      }
+    
+      .content1-dis p {
+        font-size: 0.8em;
+      }
+    
+      .content1-dis ul li {
+        font-size: 0.8em;
+      }
+      .content2-dis {
+        padding: 15px;
+      }
+    
+      .content2-dis p {
+        font-size: 0.9em;
+      }
+    
+      .micro-table-dis th,
+      .micro-table-dis td {
+        font-size: 0.8em;
+        padding: 8px;
+      }
+  }
+  
+  
